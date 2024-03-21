@@ -28,6 +28,7 @@ It is a free and open source project in which an earbuds is implemented. Earbuds
 #### Block Diagram
 
 Fig.1 shows the overall view of the design. 
+</br>
 ![Block Diagram](https://github.com/hosein-mokarian/Open-Earbuds/blob/main/Fig/open_earbuds_block_diagram.jpg?raw=true)
 <div style="text-align: center;">
     <p>Fig 1. Block Diagram</p>
