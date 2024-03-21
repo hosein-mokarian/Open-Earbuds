@@ -1,6 +1,6 @@
 # Open Earbuds
 
-It is a free and open source project in which an earbuds is implemented. Earbuds are most useful electronic gadgets nowadays. Older version used wires to transfer sound data, but newer version use a wireless communication. Bluetooth Low Energy (BLE) is the used wireless communication. It is really suitable for sound streaming. From an electronic engineer's view, it is really hard to design a small, low power and battery operated device which can be used inside ears. It has lots of challenges. This project is a guide for ones who want to know the basics of Earbuds.
+It is a free and open source project in which an earbuds is implemented. Earbuds are most useful electronic gadgets nowadays. Older versions used wires to transfer sound data, but newer versions use a wireless communication. Bluetooth Low Energy (BLE) is the used wireless communication. It is really suitable for sound streaming. From an electronic engineer's view, it is really hard to design a small, low power and battery operated device which can be used inside ears. It has lots of challenges. This project is a guide for ones who want to know the basics of Earbuds.
 
 #### Design Features
 
@@ -28,11 +28,14 @@ It is a free and open source project in which an earbuds is implemented. Earbuds
 #### Block Diagram
 
 Fig.1 shows the overall view of the design. 
-</br>
+
 ![Block Diagram](https://github.com/hosein-mokarian/Open-Earbuds/blob/main/Fig/open_earbuds_block_diagram.jpg?raw=true)
+
 <div style="text-align: center;">
     <p>Fig 1. Block Diagram</p>
 </div>
+
+
 
 
 #### Board Images
@@ -81,11 +84,55 @@ All of them will be discussed in the following.
 
 ###### MCU
 
+Wireless series of STM32 microcontroller is selected as the core of the system. It has some interesting features:
+
+- RF transceiver supporting Bluetooth® 5.3 specification
+  - Dedicated Arm® 32-bit Cortex® M0+ CPU for real-time Radio layer
+- ARM Cortex M4
+  - Frequency up to 64 MHz
+- 64 Pins / 1 MB Flash / 256 KB RAM
+- I2C / SPI / SAI
+- Touch sensing controller (TSC)
+- Ultra-low-power
+  - 1.71 to 3.6 V power supply
+
+
+
 ###### Antenna
+
+Two ways are available for BLE antenna design: PCB antenna and chip antenna. The PCB antenna is low cost and some convenient patterns can be found in ST documentations. However, it needs more space than chip antenna. Being low profile is one of main aspect of earbuds. So, chip antenna is a better selection   for our purpose. Here is some features of selected chip antenna:
+
+![Chip Antenna](https://github.com/hosein-mokarian/Open-Earbuds/blob/main/Fig/nn01-101.PNG?raw=true)
+
+- NANO mXTEND (NN02-101)
+- Datasheet
+- Smallest clearance
+- u5mm x 5mm
+- Miniature
+- Smallest Virtual Antenna™ form factor of 3.0 mm x 2.0 mm x 0.8 mm
+- Bluetooth and Wi-Fi (2400 – 2500MHz)
+- Impedance: 50 Ohms
+- Dimensions (L x W x H): 3.0 mm x 2.0 mm x 0.8 mm
+
+
 
 ###### Audio codec
 
 ###### MEMS speaker
+
+The MEMS speakers from the Ganymede series are ideal for creating modern earphones and headphone designs as well as wearables such as audio glasses and AR/VR glasses. Its features is listed as below: 
+
+![MEMS Speaker](https://github.com/hosein-mokarian/Open-Earbuds/blob/main/Fig/Ganymede-Perspective-Top-Transparent.png?raw=true)
+
+- ACHELOUS UT-P2020
+- Datasheet
+- Resonance frequency: 2.7 kHz
+- Capacity: 27±5 nF
+- Maximum AC voltage (peak) – up to 20 kHz: 15VP
+- Maximum DC voltage:15V
+- Size [mm]: 6.7 x 4.7 x 1.58
+
+
 
 ###### MEMS microphone
 
