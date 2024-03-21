@@ -107,12 +107,12 @@ Two ways are available for BLE antenna design: PCB antenna and chip antenna. The
 - NANO mXTEND (NN02-101)
 - Datasheet
 - Smallest clearance
-- u5mm x 5mm
+  - 5mm x 5mm
 - Miniature
 - Smallest Virtual Antenna™ form factor of 3.0 mm x 2.0 mm x 0.8 mm
+  - Dimensions (L x W x H): 3.0 mm x 2.0 mm x 0.8 mm
 - Bluetooth and Wi-Fi (2400 – 2500MHz)
 - Impedance: 50 Ohms
-- Dimensions (L x W x H): 3.0 mm x 2.0 mm x 0.8 mm
 
 
 
@@ -135,6 +135,27 @@ The MEMS speakers from the Ganymede series are ideal for creating modern earphon
 
 
 ###### MEMS microphone
+
+The MP34DT06J is an ultra-compact, low-power, omnidirectional, digital MEMS microphone built with a capacitive sensing element and an IC interface.
+
+- MEMS audio sensor omnidirectional digital microphone
+- MP34DT06J
+- Features
+  - Single supply voltage
+  - Low power consumption
+  - Omnidirectional sensitivity
+  - PDM output
+
+- Supply voltage
+  - Min: 1.6  Typ: 1.8 Max: 3.6 V
+- Current consumption in normal mode: 650 μA
+- Current consumption in power-down mode: 5 μA
+  - power-down mode: *Input* *clock in static* *mode*
+- Capacitive load: 100 pF
+- fCLK Clock frequency for normal mode 
+  - Min: 1.2 MHz Max: 3.25 MHz
+
+
 
 ###### Battery charger
 
